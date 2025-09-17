@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")  // aplica a todos los endpoints
-                        .allowedOrigins("http://localhost:4200" , "https://52b20ab28480.ngrok-free.app")
+                        .allowedOrigins("http://localhost:4200" , "https://distribuidora-back-production.up.railway.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
